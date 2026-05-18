@@ -9,6 +9,7 @@
     "looks_like": "mon_feral_human_pipe",
     "name": "feral scavenger",
     "description": "This lean, sickly-looking human stalks the perimiter of buildings, rattling doors and peering through windows.",
+    "default_faction": "fargone",
     "scents_tracked": [ "sc_human", "sc_fetid" ],
     "extend": { "flags": [ "GOODHEARING", "KEENNOSE", "LOUDMOVES" ], "anger_triggers": [ "SOUND" ] },
     "delete": { "flags": [ "BASHES", "GROUP_BASH" ] },
@@ -54,14 +55,14 @@
       }
     ]
   },
-  { "name": "delicious_food", "type": "MONSTER_FACTION" },
+  { "name": "delicious_food", "type": "MONSTER_FACTION", "base_faction": "small_animal" }, 
   {
     "//": "An imagined slice of pizza to tempt ferals indoors. Only visible to player for a few seconds as a blank entry in V menu.",
     "id": "bh_monster_pizza",
     "type": "MONSTER",
     "copy-from": "mon_rabbit",
     "default_faction": "delicious_food",
-    "name": "",
+    "name": "pizza slice",
     "description": "",
     "symbol": " ",
     "flags": [ "IMMOBILE", "ALWAYS_VISIBLE" ],
