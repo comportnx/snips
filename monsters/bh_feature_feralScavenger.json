@@ -62,7 +62,7 @@
     "type": "MONSTER",
     "copy-from": "mon_rabbit",
     "default_faction": "delicious_food",
-    "name": "pizza slice",
+    "name": "",
     "description": "",
     "symbol": " ",
     "flags": [ "IMMOBILE", "ALWAYS_VISIBLE" ],
